@@ -267,7 +267,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 - 复制输出的内容（全部内容）。
 
-#### 4. 添加公钥到远程仓库
+#### 4. 添加公钥到远程仓给i他库
 
 - **GitHub**：Settings > SSH and GPG keys > New SSH key，粘贴公钥并保存。
 - **Gitee**：设置 > 安全设置 > SSH 密钥，粘贴公s钥并保存。
@@ -836,19 +836,6 @@ $\frac{a}{b}$
 ```
 
 效果：$\frac{a}{b}$
-
----
-
-##### 13. mermaid 绘图
-
-支持流程图、时序图等（需平台支持）。
-
-```markdown
-graph TD
-A[串口中断接收] --> B{中断号判断}
-B -->|USART1 或 USART2| C[堆栈寄存器压入\n]
-C --> B
-```
 
 ---
 
