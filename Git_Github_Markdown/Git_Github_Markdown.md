@@ -38,7 +38,7 @@ tags: [技术, 教程]
    - 使用国内镜像源下载，提升下载速度。
    - 示例：
    - [清华大学开源镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
-   - [阿里云开源镜像站](https://developer.aliyun.com/mirror/)。
+   - [阿里云开源镜像站](https://developer.aliyun.com/mirror/)
 
 1. **文件代理加速**
    - 使用文件代理加速网站下载 GitHub 项目，提升下载速度。
@@ -54,8 +54,7 @@ tags: [技术, 教程]
 
 #### VPN 是什么？机场是什么？
 
-
-#### 机场线路名词解释
+#### 名词解释
 
 - **规则**：
 - **全局**：
@@ -73,15 +72,9 @@ tags: [技术, 教程]
 
 同样带宽下，体验优先级：  
 
-**IEPL 专线中转 > 隧道中转 > 公网中转 > 直连**
+**IEPL 专线中转  隧道中转   公网中转   直连**
 
-##### 1. 直连机场
 
-##### 2. 普通中转
-
-##### 3. BGP 中转
-
-##### 4. IPLC 中转
 
 #### 推荐客户端工具
 
@@ -90,13 +83,141 @@ tags: [技术, 教程]
 
 #### 客户端使用流程简述
 
-
+****
 
 ## Git 与 GitHub
 
-- **Git**：核心工具，记录代码修改历史，创建分支，合并分支等。
-- **GitHub/Gitee**：代码托管平台，方便协作、展示作品、参与开源项目。
+### GitHub 入门详解
 
+#### 1. GitHub 是什么？
+
+- **GitHub** 是全球最大的开源代码托管平台，基于 Git 版本控制，方便开发者协作、分享和展示项目。
+- 在 GitHub 上，你可以：
+  - 托管自己的项目代码，并进行版本管理
+  - 查找和参与全球开源项目
+  - 与他人协作开发（团队项目、开源贡献）
+  - 展示个人作品，提升技术影响力
+
+#### 2. GitHub 账号注册与界面介绍
+
+- [GitHub 注册入口](https://github.com/)
+
+- 不建议直接使用教育邮箱注册
+
+  > 我们学校的教育邮箱是   学号@stu.nchu.edu.cn
+  >
+  > 教育认证可额外绑定教育邮箱，可获取学生认证福利（如 Copilot 免费使用）
+
+- 注册流程：填写邮箱、用户名、密码 → 邮箱验证 → 完善个人资料
+
+##### GitHub 主要界面说明
+
+- **Repositories（仓库）**：项目代码的存放地，每个仓库包含代码、文档、历史记录等
+- **Issues**：用于提交问题、建议、任务分解，方便项目管理和交流
+- **Pull Requests（PR）**：代码协作的核心，提交代码修改请求，项目维护者审核后合并
+- **Fork**：复制别人的项目到你的账户，方便独立开发或贡献代码
+- **Star**：收藏项目，方便日后查找
+- **Actions**：自动化 CI/CD 工具，帮助自动测试和部署
+
+#### 3. GitHub 教育认证与 Copilot 白嫖流程
+
+- **GitHub Copilot**：AI 智能编程助手，自动补全代码、生成函数/注释，提升开发效率
+
+- **教育认证步骤**：
+
+  1. 注册并登录 GitHub 账号
+
+  2. 访问 [GitHub Education](https://education.github.com/) 页面，点击“Get benefits”或“Apply for Student Developer Pack”
+
+  3. 根据提示填写教育邮箱、学生身份等信息，提交认证
+
+     > 1.直连
+     >
+     > 2.中英文双份教育证明 学生证 学信网…
+
+  4. 通过后可免费开通 Copilot（[Copilot 激活入口](https://github.com/settings/copilot)）
+
+#### 4. GitHub 基础实战流程
+
+- **远程仓库协作流程**：
+  1. Fork 项目到个人账户
+  2. Clone 仓库到本地
+  3. 新建分支，进行开发
+  4. 提交并推送修改到远程分支
+  5. 发起 Pull Request，等待项目维护者审核合并
+  6. 参与 Issues 讨论，跟进项目进展
+
+- **常见协作场景**：
+  - 团队开发：多人协作同一项目，分工明确，分支合并
+  - 开源贡献：发现项目问题或有新功能建议，可提交 PR 或 Issue
+  - 个人作品：将自己的代码托管公开
+
+#### 5. GitHub 常用术语补充
+
+- **Commit**：每一次代码提交
+- **Branch**：分支，独立开发环境
+- **Merge**：合并分支
+- **Release**：项目发布版本
+- **Webhook**：自动消息通知
+
+---
+
+### Gitee 入门详解
+
+#### 1. Gitee 是什么？
+
+- **Gitee（码云）**：中国主流的代码托管平台，支持 Git 管理，适合国内团队、企业使用。
+- 优势：
+  - 国内访问速度快，无需科学上网
+  - 支持私有仓库免费（适合团队或企业项目）
+  - 与中国开发者生态结合紧密（对接企事业单位、开源中国等）
+
+#### 2. Gitee 账号注册与界面介绍
+
+- [Gitee 注册入口](https://gitee.com/)
+- 支持手机号、邮箱注册
+- 注册流程：填写信息 → 验证 → 完善个人资料
+
+##### Gitee 主要界面说明
+
+- **项目（Project）**：代码仓库
+- **问题（Issue）**：项目问题追踪与任务管理
+- **合并请求（Pull Request）**：代码协作
+- **收藏、Fork、Watch**：功能与 GitHub 类似
+
+#### 3. Gitee SSH Key 配置与项目协作
+
+- SSH Key 配置流程与 GitHub 类似（见上方）
+- 项目协作流程：
+  1. 创建或 Fork 仓库
+  2. Clone 到本地
+  3. 新建分支开发，提交并推送
+  4. 发起合并请求
+  5. 参与 Issue 讨论
+
+#### 4. Gitee 特色功能
+
+- 支持企业版和团队协作
+- 支持中国主流第三方登录（微信、支付宝等）
+- 支持私有仓库免费，适合企业内部项目管理
+
+---
+
+#### 第五部分：GitHub 和 Gitee 的核心功能对比
+
+| 功能         | GitHub              | Gitee                |
+| ------------ | ------------------- | -------------------- |
+| Fork         | 复制项目到个人账户  | 同样支持复制项目     |
+| Star         | 收藏项目            | 同样支持收藏项目     |
+| Watch        | 订阅项目动态        | 支持订阅             |
+| Issues       | 提交问题或建议      | 问题追踪支持更本地化 |
+| Pull Request | 提交代码修改和合并  | 类似功能             |
+| Actions      | 自动化 CI/CD 工作流 | 不支持 Actions       |
+| Pages        | 静态网站托管        | 提供类似功能         |
+| Releases     | 发布稳定版本        | 同样支持发布功能     |
+| Webhooks     | 自动消息通知        | 支持类似功能         |
+
+****
 
 ### Git 是什么
 
@@ -109,9 +230,9 @@ tags: [技术, 教程]
   2. **分支管理**：分支如同章节，可以并行开发互不干扰。
   3. **分布式**：每个人都有完整的“时光机日记本”，即使没有网络也能工作。
 
-![image-20251026005506935](./Git_Github_Markdown.assets/image-20251026005506935.png)
+![image-20251026005506935](Git_Github_Markdown.assets/image-20251026005506935.png)
 
-![image-20251026010147015](./Git_Github_Markdown.assets/image-20251026010147015.png)
+![image-20251026010147015](Git_Github_Markdown.assets/image-20251026010147015.png)
 
 > feature分支（添加功能命名）
 >
@@ -149,7 +270,7 @@ cat ~/.ssh/id_rsa.pub
 #### 4. 添加公钥到远程仓库
 
 - **GitHub**：Settings > SSH and GPG keys > New SSH key，粘贴公钥并保存。
-- **Gitee**：设置 > 安全设置 > SSH 密钥，粘贴公钥并保存。
+- **Gitee**：设置 > 安全设置 > SSH 密钥，粘贴公s钥并保存。
 
 #### 5. 测试连接
 
@@ -350,128 +471,6 @@ git commit -m "fix conflict"
 | 合并分支         | `git merge 分支名`                                           | 不同章节内容合并到主线               |
 | 拉取远程代码     | `git pull origin 分支名`                                     | 从远程仓库获取最新代码               |
 
----
-
-### GitHub 入门详解
-
-#### 1. GitHub 是什么？
-
-- **GitHub** 是全球最大的开源代码托管平台，基于 Git 版本控制，方便开发者协作、分享和展示项目。
-- 在 GitHub 上，你可以：
-  - 托管自己的项目代码，并进行版本管理
-  - 查找和参与全球开源项目
-  - 与他人协作开发（团队项目、开源贡献）
-  - 展示个人作品，提升技术影响力
-
-#### 2. GitHub 账号注册与界面介绍
-
-- [GitHub 注册入口](https://github.com/)
-
-- 不建议直接使用教育邮箱注册
-
-  > 我们学校的教育邮箱是   学号@stu.nchu.edu.cn
-  >
-  > 教育认证可额外绑定教育邮箱，可获取学生认证福利（如 Copilot 免费使用）
-
-- 注册流程：填写邮箱、用户名、密码 → 邮箱验证 → 完善个人资料
-
-##### GitHub 主要界面说明
-- **Repositories（仓库）**：项目代码的存放地，每个仓库包含代码、文档、历史记录等
-- **Issues**：用于提交问题、建议、任务分解，方便项目管理和交流
-- **Pull Requests（PR）**：代码协作的核心，提交代码修改请求，项目维护者审核后合并
-- **Fork**：复制别人的项目到你的账户，方便独立开发或贡献代码
-- **Star**：收藏项目，方便日后查找
-- **Actions**：自动化 CI/CD 工具，帮助自动测试和部署
-
-#### 3. GitHub 教育认证与 Copilot 白嫖流程
-
-- **GitHub Copilot**：AI 智能编程助手，自动补全代码、生成函数/注释，提升开发效率
-- **教育认证步骤**：
-  1. 注册并登录 GitHub 账号
-  2. 访问 [GitHub Education](https://education.github.com/) 页面，点击“Get benefits”或“Apply for Student Developer Pack”
-  3. 根据提示填写教育邮箱、学生身份等信息，提交认证
-  4. 通过后可免费开通 Copilot（[Copilot 激活入口](https://github.com/settings/copilot)）
-
-#### 4. GitHub 基础实战流程
-
-- **远程仓库协作流程**：
-  1. Fork 项目到个人账户
-  2. Clone 仓库到本地
-  3. 新建分支，进行开发
-  4. 提交并推送修改到远程分支
-  5. 发起 Pull Request，等待项目维护者审核合并
-  6. 参与 Issues 讨论，跟进项目进展
-
-- **常见协作场景**：
-  - 团队开发：多人协作同一项目，分工明确，分支合并
-  - 开源贡献：发现项目问题或有新功能建议，可提交 PR 或 Issue
-  - 个人作品：将自己的代码托管公开，展示技术实力
-
-#### 5. GitHub 常用术语补充
-
-- **Commit**：每一次代码提交
-- **Branch**：分支，独立开发环境
-- **Merge**：合并分支
-- **Release**：项目发布版本
-- **Webhook**：自动消息通知
-
----
-
-### Gitee 入门详解
-
-#### 1. Gitee 是什么？
-
-- **Gitee（码云）**：中国主流的代码托管平台，支持 Git 管理，适合国内团队、企业使用。
-- 优势：
-  - 国内访问速度快，无需科学上网
-  - 支持私有仓库免费（适合团队或企业项目）
-  - 与中国开发者生态结合紧密（对接企事业单位、开源中国等）
-
-#### 2. Gitee 账号注册与界面介绍
-
-- [Gitee 注册入口](https://gitee.com/)
-- 支持手机号、邮箱注册
-- 注册流程：填写信息 → 验证 → 完善个人资料
-
-##### Gitee 主要界面说明
-- **项目（Project）**：代码仓库
-- **问题（Issue）**：项目问题追踪与任务管理
-- **合并请求（Pull Request）**：代码协作
-- **收藏、Fork、Watch**：功能与 GitHub 类似
-- **Gitee Pages**：静态网站托管（个人博客/项目文档）
-
-#### 3. Gitee SSH Key 配置与项目协作
-
-- SSH Key 配置流程与 GitHub 类似（见上方）
-- 项目协作流程：
-  1. 创建或 Fork 仓库
-  2. Clone 到本地
-  3. 新建分支开发，提交并推送
-  4. 发起合并请求
-  5. 参与 Issue 讨论
-
-#### 4. Gitee 特色功能
-
-- 支持企业版和团队协作
-- 支持中国主流第三方登录（微信、支付宝等）
-- 支持私有仓库免费，适合企业内部项目管理
-
----
-
-### 第五部分：GitHub 和 Gitee 的核心功能对比
-
-| 功能         | GitHub              | Gitee                |
-| ------------ | ------------------- | -------------------- |
-| Fork         | 复制项目到个人账户  | 同样支持复制项目     |
-| Star         | 收藏项目            | 同样支持收藏项目     |
-| Watch        | 订阅项目动态        | 支持订阅             |
-| Issues       | 提交问题或建议      | 问题追踪支持更本地化 |
-| Pull Request | 提交代码修改和合并  | 类似功能             |
-| Actions      | 自动化 CI/CD 工作流 | 不支持 Actions       |
-| Pages        | 静态网站托管        | 提供类似功能         |
-| Releases     | 发布稳定版本        | 同样支持发布功能     |
-| Webhooks     | 自动消息通知        | 支持类似功能         |
-
 ****
 
 ### 总结
@@ -497,7 +496,7 @@ git commit -m "fix conflict"
 - 下载 Typora 安装包，运行后一路点击 OK 即可完成安装。
 - 如果需要激活，将文件夹中的 **winmm.dll** 移动到 Typora 的安装路径下（如 D:\Program Files\Typora）。注意此步骤需关闭 Typora 软件，否则会报错。
 
-![image-20251017092741839](./Git_Github_Markdown.assets/Git_Github_Markdown_3.png)
+![image-20251017092741839](Git_Github_Markdown.assets/Git_Github_Markdown_3.png)
 
 ---
 
@@ -515,7 +514,7 @@ git commit -m "fix conflict"
 - 建议将侧边栏打开，便于查看和管理文档结构。
 - 在 Typora 主界面点击右下角的 `显示/隐藏侧边栏` 按钮即可。
 
-![image-20251017093303047](./Git_Github_Markdown.assets/Git_Github_Markdown_4.png)
+![image-20251017093303047](Git_Github_Markdown.assets/Git_Github_Markdown_4.png)
 
 ---
 
@@ -524,7 +523,7 @@ git commit -m "fix conflict"
 - 进入 Typora 菜单栏 `文件 -> 偏好设置`，进行文件相关配置。
 - 推荐按照下图设置，便于文档管理与文件归档。
 
-![image-20251017093318594](./Git_Github_Markdown.assets/Git_Github_Markdown_5.png)
+![image-20251017093318594](Git_Github_Markdown.assets/Git_Github_Markdown_5.png)
 
 ---
 
@@ -532,7 +531,7 @@ git commit -m "fix conflict"
 
 - 推荐启用智能缩进、自动补全 Markdown 字符、统一行尾符号等功能，提升编辑效率，减少语法出错。
 
-![image-20251017093327185](./Git_Github_Markdown.assets/Git_Github_Markdown_6.png)
+![image-20251017093327185](Git_Github_Markdown.assets/Git_Github_Markdown_6.png)
 
 ---
 
@@ -545,20 +544,16 @@ git commit -m "fix conflict"
   - 生成图片相对路径  
 - 图片插入后，建议压缩图片或生成缩略图，减少文档体积。
 
-![image-20251017093345944](./Git_Github_Markdown.assets/Git_Github_Markdown_7.png)
-
 ---
 
 ##### Markdown 配置
 
-我们在这里可以配置markdown的语法相关，我的建议是全部勾上（除了那个首行缩进<这是个人喜好
-
-\>），一定勾选上那个图表，这样可以让typora对mermaid等图表代码直接进行渲染，下面的公式编号还是看个人情况，这里就不过多说了
+我们在这里可以配置markdown的语法相关，我的建议是全部勾上，一定勾选上那个图表，这样可以让typora对mermaid等图表代码直接进行渲染，下面的公式编号还是看个人情况，这里就不过多说了
 
 - 建议开启 Typora 对 mermaid 图表和数学公式的支持，方便画流程图和写公式。
 - 推荐设置常用语法快捷键，提升编辑效率。
 
-![image-20251017093521861](./Git_Github_Markdown.assets/Git_Github_Markdown_8.png)
+![image-20251017093521861](Git_Github_Markdown.assets/Git_Github_Markdown_8.png)
 
 ---
 
@@ -567,7 +562,7 @@ git commit -m "fix conflict"
 - 可根据个人需求设置 PDF 导出参数，包括页面大小、边距等。
 - 支持设置 YAML 头信息（如 title、author），导出时自动识别并加到对应位置。
 
-![image-20251017093617999](./Git_Github_Markdown.assets/Git_Github_Markdown_9.png)
+![image-20251017093617999](Git_Github_Markdown.assets/Git_Github_Markdown_9.png)
 
 ---
 
@@ -575,7 +570,7 @@ git commit -m "fix conflict"
 
 - 推荐使用「经典」模式，字体大小和主题可按个人习惯调整，支持多种主题切换（如 HappySimple、Jetbrains Mono Theme 等）。
 
-![image-20251017093703523](./Git_Github_Markdown.assets/Git_Github_Markdown_10.png)
+![image-20251017093703523](Git_Github_Markdown.assets/Git_Github_Markdown_10.png)
 
 - 主题获取途径：
   - [Themes Gallery – Typora](https://theme.typora.io/)
@@ -585,7 +580,7 @@ git commit -m "fix conflict"
 
 ##### 通用配置
 
-![image-20251017093728150](./Git_Github_Markdown.assets/Git_Github_Markdown_11.png)
+![image-20251017093728150](Git_Github_Markdown.assets/Git_Github_Markdown_11.png)
 
 - 建议关闭自动检查更新和开发版更新，稳定性更好。
 - 可自定义快捷键，提升操作效率。
@@ -894,9 +889,11 @@ C --> B
 
 ---
 
-## 插件与刷课脚本部分
+## 插件与脚本
 
-### 一、浏览器插件简介
+### 浏览器插件简介
+
+> 脚本仅供学习交流，勿用于违规用途。
 
 #### 1. 什么是浏览器插件？
 
@@ -929,49 +926,33 @@ C --> B
 
   > 聚合了 Chrome、Edge、Firefox 各类插件和油猴脚本，国内访问速度快，适合查找各类扩展和脚本。
 
-- 也可去 [Chrome Web Store](https://chrome.google.com/webstore/) 安装（需科学上网）。
+- 也可去 [Chrome Web Store](https://chrome.google.com/webstore/) 安装。
 
 **b. Edge 浏览器：**
 - 可在 Edge 插件商店或 crx搜搜 搜索并安装。
 
 **c. Firefox 浏览器：**
+
 - 前往 [Firefox 附加组件](https://addons.mozilla.org/) 搜索并安装。
 
 ---
 
-### OCS网课助手与刷课脚本
+### 脚本
 
-#### OCS网课助手简介
+####     简介
 
-OCS网课助手是一款专为网课平台（如超星、智慧树、学堂在线等）开发的刷课插件，能实现自动播放、刷视频、自动答题等功能，大大提高网课学习效率。适合需要快速完成网课任务的同学。
-
-- **官网/项目主页**：[OCS网课助手](https://docs.ocsjs.com/)
+- **官网/项目主页**：[OCS](https://docs.ocsjs.com/)
 - **主要功能**：
-  - 自动刷视频、自动答题、自动过考试
-  - 支持多个主流网课平台
-  - 可配合题库使用（如教材/言溪题库等）
 
-#### 言溪题库简介
+####      简介
 
-- **官网主页**：[言溪题库](https://tk.enncy.cn/)
+- **官网主页**：[题库](https://tk.enncy.cn/)
 
-- 提供超星、智慧树等平台的题目答案，可提升刷课和自动答题的正确率。
-- 常见用法：在 OCS 等刷课插件设置里绑定题库接口，或手动查找题目答案。
+#### 脚本与教程
 
-#### WE Learn & U校园刷课脚本与教程
-
-- **EOC 一站式刷课脚本合集**：[EOC项目主页](https://ssmjae.github.io/EOC/)
-  - 该网站提供了针对多种主流校园网课平台（如 WE Learn、U校园等）的刷课脚本及详细教程。
-  - 主要功能包括：
-    - 自动刷视频、自动答题、自动完成作业、考试辅助等
-    - 支持多平台、多类型课程的自动化处理
-    - 提供详细的安装流程、脚本下载链接、常见问题解答
-  - 网站内容持续更新，适合自助查找和学习刷课自动化工具
+- **EOC 一站式脚本合集**：[EOC](https://ssmjae.github.io/EOC/)
 
 **使用建议：**
-- 进入 EOC 项目主页后，根据你的网课平台（如 WE Learn、U校园）选择对应脚本和教程，按照页面说明进行安装和使用。
-- 建议优先使用油猴（Tampermonkey）或篡改猴（Violentmonkey）插件进行脚本管理，确保兼容性和脚本运行稳定。
-- 脚本仅供学习和便捷课程管理使用，切勿用于违规用途。
 
 ---
 
@@ -979,7 +960,6 @@ OCS网课助手是一款专为网课平台（如超星、智慧树、学堂在�
 
 - 插件和脚本建议只从知名平台和官方渠道下载，避免安全风险。
 - 使用脚本前请详细阅读说明，注意账号安全，不要泄露个人信息。
-- 刷课脚本仅供学习交流，勿用于违规用途。
 
 ---
 
